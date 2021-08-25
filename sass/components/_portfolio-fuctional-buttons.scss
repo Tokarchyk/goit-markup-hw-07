@@ -1,0 +1,37 @@
+/* FUNCTIONAL BUTTONS */
+.filters {
+  display: flex;
+  justify-content: center;
+}
+.filters__item {
+  margin-right: 8px;
+}
+.filters__item:last-child {
+  margin-right: 0;
+}
+
+.filters__button {
+  background-color: $team-color;
+  color: $title-secondary-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: 0px;
+
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $contacts-hover-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
